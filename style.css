@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2%;
-    margin: 40px 0;
+    margin: 40px auto;
 }
 
 .code {
@@ -45,7 +45,7 @@ body {
     -webkit-appearance: none;
 }
 
-.code:focus{
+.code:focus {
     outline: 0;
 }
 
@@ -55,7 +55,7 @@ body {
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
-.info{
+.info {
     display: inline-block;
     max-width: 400px;
     padding: 1rem;
@@ -64,3 +64,43 @@ body {
     color: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 700px) {
+    .code-container {
+        max-width: 400px;
+        flex-wrap: wrap;
+    }
+
+    .code {
+        margin-bottom: 15px;
+    }
+
+    .info {
+        margin-top: -15px;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .code-container {
+        max-width: 250px;
+        flex-wrap: wrap;
+        margin: 20px auto;
+    }
+
+    .code {
+        height: 80px;
+        width: 60px;
+        font-size: 3rem;
+    }
+
+    .info {
+        width: 100%;
+    }
+}
