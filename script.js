@@ -12,7 +12,7 @@ inputCodes.forEach((code, idx) => {
                 setTimeout(() => inputCodes[idx + 1].focus(), 0);
             }
         } else if (e.key === 'Backspace') {
-            if (code.value === '') {
+            if (code.value === '' && idx !== 0) {
                 inputCodes[idx - 1].focus();
             }
         }
